@@ -8,3 +8,12 @@ def reverse_each_word(word)
 end
 
 
+def reverse_each_word(words)
+  new_arr = []
+ each_word = words.split(' ')
+  each_word.collect do |word|
+     new_arr << "#{word.reverse}"
+      
+  end
+  new_arr.join(' ')
+end
